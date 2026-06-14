@@ -116,7 +116,6 @@ export default function App() {
     }
     setLoading(false);
   };
-
   const saveMood = () => {
     if (!selectedMood) return;
     const entry = {
@@ -262,7 +261,6 @@ export default function App() {
       <NavBar />
     </div>
   );
-
   // ── CHAT ──────────────────────────────────────────
   if (view === "chat") return (
     <div style={{ ...styles.app }}>
@@ -327,7 +325,6 @@ export default function App() {
       <style>{@keyframes pulse { 0%,80%,100%{opacity:0.3;transform:scale(0.8)} 40%{opacity:1;transform:scale(1)} }}</style>
     </div>
   );
-
   // ── MOOD ──────────────────────────────────────────
   if (view === "mood") return (
     <div style={styles.app}>
@@ -384,7 +381,6 @@ export default function App() {
       <NavBar />
     </div>
   );
-
   // ── BREATHE ───────────────────────────────────────
   if (view === "breathe") {
     const step = BREATHING_STEPS[breathStep];
@@ -427,9 +423,9 @@ export default function App() {
         </div>
         <NavBar />
       </div>
-   );
+    );
   }
-  
+
   // ── JOURNAL ───────────────────────────────────────
   if (view === "journal") return (
     <div style={styles.app}>
